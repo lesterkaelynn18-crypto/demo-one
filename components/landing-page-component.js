@@ -2,16 +2,16 @@ export default {
   name: 'landing-page-component',
   template: /* html */ `
     <div class="container py-4">
-      <h1 class="mb-3">Welcome!</h1>
-      <p class="lead">This is a web app template in need of customization and improved interaction design.</p>
-      <router-link to="/items" class="btn btn-primary mb-4"><i class="bi bi-list-check me-1"></i>View the Example Collection</router-link>
+      <h1 class="mb-3">Story Circle</h1>
+      <p class="lead">Discover short reviews for books and movies, then open each detail page to read the full notes.</p>
+      <router-link to="/items" class="btn btn-primary mb-4"><i class="bi bi-journal-bookmark-fill me-1"></i>Browse Reviews</router-link>
 
-      <h2 class="h4 mt-3">Template App Description</h2>
+      <h2 class="h4 mt-3">What this app does</h2>
       <p>
-        This is a simple Vue.js starter template that demonstrates how to build a small web app with a landing page, a collection page, and an item detail page. It uses Vue's Composition API for state management and Vue Router for navigation. The app loads a dataset from a CSV file and allows users to bookmark items for easy access later.
+        Story Circle is a simple review collection for readers and viewers. It shows a small list of books and films with a calm dark style, so visitors can quickly scan titles, see category labels, and open the detail page for more information.
       </p>
       <p>
-        Your goal is to customize the app by adapting it to a different dataset, improving the user interface and interaction design, and adding new features that enhance the user experience. You can use any public dataset that interests you, such as movies, books, recipes, or anything else you find compelling. The app is intentionally simple to give you a lot of freedom in how you choose to enhance it.
+        The app keeps the same page structure as the starter template, with a home page, a review collection page, item detail pages, and an about page. The review items load from the CSV data file and display in cards for easy browsing.
       </p>
     </div>
   `,

@@ -10,11 +10,11 @@ export default {
   template: /* html */ `
     <section class="container py-4">
       <div class="d-flex justify-content-between align-items-center mb-3">
-        <h1 class="h3 mb-0">Collection</h1>
+        <h1 class="h3 mb-0">Review Collection</h1>
         <span class="badge text-bg-light border">{{ itemsStore.items.length }} shown</span>
       </div>
 
-      <p class="text-muted">Browse a simple dataset loaded from a CSV file.</p>
+      <p class="text-muted">Browse a curated list of book and movie review entries loaded from the CSV dataset.</p>
 
       <div v-if="itemsStore.isLoading" class="alert alert-secondary" role="status">
         Loading items...

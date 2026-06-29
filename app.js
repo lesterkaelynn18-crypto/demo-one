@@ -36,13 +36,25 @@ const app = Vue.createApp({
       error: '',
     });
 
-    fetch('items-template.csv')
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error('Could not load CSV data file.');
-        }
-        return response.text();
-      })
+    const loadCsv = () => {
+      return fetch('items.csv')
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error('items.csv not found');
+          }
+          return response.text();
+        })
+        .catch(() => {
+          return fetch('items-template.csv').then((response) => {
+            if (!response.ok) {
+              throw new Error('Could not load CSV data file.');
+            }
+            return response.text();
+          });
+        });
+    };
+
+    loadCsv()
       .then((csvText) => {
         Papa.parse(csvText, {
           header: true,

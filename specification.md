@@ -1,21 +1,17 @@
-# Specification: [Your App Idea Name]
+# Specification: []
 
-App description: [Write a one or two sentences describing what your app does and who it’s for.]
+App description: [Story Circle is a small website for people to browse short reviews of books and movies, and use it to explore new stories with a calm, reader-friendly layout.]
 
 ## Style and Theme
 
-[Describe the look and feel of your app.] 
-
-Overall mood:
-Examples: fun and playful, calm and professional, bold and energetic, etc.
-
-Use the *style-guide.html* for details on styling -- fonts, colors, and layout.
+[dark purple colors]
+.n styling -- fonts, colors, and layout.
 
 ## User Scenarios
 
 ### Story 1 (most important)
 
-[Write 1-2 sentences. Who is using the app, what do they want to do, and what do they see when it works? Write it like you are describing it to a friend.]
+[Someone who likes books and films wants to find a quick review for a title. They open the app, scan the review cards on the collection page, and click one item to see the full details and notes.] 
 
 ---
 
@@ -31,7 +27,7 @@ Write clear statements about what the app must do.
 	 - Item detail (`#/items/:id`)
 	 - About (`#/about`)
 2. The navigation bar must let people move to Home, Items, and About.
-3. The app must load data from `items-template.csv` (a simple text table file).
+3. The app must load data from `items.csv` (a simple text table file).
 4. The collection page must show one card per row in the data file.
 5. Each card must include name, short description, and image (if available).
 6. Each card must include a way to open that item's detail page.
